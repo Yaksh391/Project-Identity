@@ -1,4 +1,13 @@
+@font-face {
+    font-family: "San Fransisco";
+    src: url("../font/SF Pro Display/SF-Pro-Display-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
 body {
-    color: blue;
-    font-size: xxx-large;
+    font-family: "San Fransisco", sans-serif;
 }

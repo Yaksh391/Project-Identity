@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 def Home(request, *args, **kwargs):
     context = {}
-    return render(request, 'base/base.html', context)
+    return render(request, 'home.html', context)
