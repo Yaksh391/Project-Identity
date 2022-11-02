@@ -15,3 +15,9 @@ def Project_Showcase(request, *args, **kwargs):
     objs = Project.objects.all()
     context = {"projects": objs}
     return render(request, 'project/project_showcase.html', context)
+
+
+def Project_Preview(request, title, *args, **kwargs):
+    obj = Project.objects.get(title=title.title())
+    context = {"project": obj}
+    return render(request, 'project/project_preview.html', context)
