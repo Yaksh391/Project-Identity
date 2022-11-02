@@ -7,4 +7,18 @@
 {% endblock head %}
 
 {% block content %}
+    <h1>{{ project.title }}</h1>
+    <img src="{{ project.cover_image.url }}" alt="{{ project.title }}'s cover image">
+    <p>{{ project.description }}</p>
+    <p>{{ project.references }}</p>
+    <p>{{ project.discipline_of_work }}</p>
+    <img src="{{ project.image_1.url }}" alt="{{ project.title }}'s other image">
+    <img src="{{ project.image_2.url }}" alt="{{ project.title }}'s other image">
+    <img src="{{ project.image_3.url }}" alt="{{ project.title }}'s other image">
+    <img src="{{ project.image_4.url }}" alt="{{ project.title }}'s other image">
+    <img src="{{ project.image_5.url }}" alt="{{ project.title }}'s other image">
+    <img src="{{ project.image_6.url }}" alt="{{ project.title }}'s other image">
+    <img src="{{ project.image_7.url }}" alt="{{ project.title }}'s other image">
+    <h2>{{ project.youtube_video }}</h2>
+
 {% endblock content %}
