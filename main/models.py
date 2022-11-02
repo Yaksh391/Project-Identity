@@ -1,5 +1,4 @@
 from django.db import models
-import os
 
 # Create your models here.
 
@@ -20,7 +19,7 @@ def path_project_title(instance, filename):
 
 
 class Project(models.Model):
-    title = models.CharField(max_length=50, default="")
+    title = models.CharField(max_length=50, default="",  help_text="Please use title case formatting only")
     description = models.TextField(max_length=500, default="")
     references = models.TextField(max_length=1000, default="")
     cover_image = models.ImageField(upload_to=path_project_title, default="")
@@ -33,4 +32,3 @@ class Project(models.Model):
     image_7 = models.ImageField(upload_to=path_project_title, default="")
     youtube_video = models.CharField(default="", max_length=40)
     discipline_of_work = models.TextField(default="", help_text="Please separate them by a comma.")
-
