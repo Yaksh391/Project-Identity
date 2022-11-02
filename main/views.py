@@ -6,5 +6,5 @@ from .models import Person
 def Home(request, *args, **kwargs):
     model = Person.objects.filter(first_name__exact="Yaksh")
     # model = Person.objects.all()
-    context = {"people": model[0]}
+    context = {"person": model[0]}
     return render(request, 'home.html', context)
