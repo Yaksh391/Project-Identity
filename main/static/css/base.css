@@ -8,6 +8,7 @@
     src: url("../font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
 }
 
-body {
-    font-family: "San Fransisco", sans-serif;
+@font-face {
+    font-family: "Abril FatFace";
+    src: url("../font/Abril Fatface/AbrilFatface-Regular.ttf") format("truetype");
 }
