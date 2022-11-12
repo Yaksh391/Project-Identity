@@ -6,16 +6,47 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 75%;
+    width: 98%;
     left: 50%; top: auto;
     transform: translate(-50%,0);
 }
 
 .Introduction h1 {
     font-weight: 200;
+    width: 90%;
+    font-size: 75px;
+    text-align: center;
+    z-index: -1;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 110px;
+    /*border-right: 0.07em solid black;*/
+    /*animation: typing 10s linear infinite forwards;*/
+}
+
+@keyframes typing {
+    0% { transform: scaleX(0)}
+    /*10% { width: 0 }*/
+    25% { transform: scaleX(100%) }
+    75% { transform: scaleX(100%) }
+    90% { transform: scaleX(0) }
+    100% { transform: scaleX(0) }
+    }
+
+.Introduction img {
+    z-index: 1;
+    margin-top: -195px;
+    /*width: 55%;*/
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    /*box-shadow: black 0 0 5px;*/
 }
 
 .Introduction {
-    width: auto;
+    width: 95%;
     height: auto;
+    align-items: center;
 }
