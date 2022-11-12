@@ -6,6 +6,8 @@
 
 {% block content %}
 {#    <h1>Hello world!</h1>#}
-    <h1>Hi, I am {{ person.first_name }} {{ person.last_name }}!</h1>
-    <img src="{{ person.picture_background_removed.url }}" alt="image of me with background removed">
+    <div class="Introduction">
+        <h1>Hi, I am {{ person.first_name }} {{ person.last_name }}!</h1>
+        <img src="{{ person.picture_background_removed.url }}" alt="image of me with background removed">
+    </div>
 {% endblock content %}
