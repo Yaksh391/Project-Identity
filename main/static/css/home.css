@@ -1,3 +1,21 @@
 body {
     font-family: "Abril FatFace", sans-serif;
 }
+
+.page {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 75%;
+    left: 50%; top: auto;
+    transform: translate(-50%,0);
+}
+
+.Introduction h1 {
+    font-weight: 200;
+}
+
+.Introduction {
+    width: auto;
+    height: auto;
+}
