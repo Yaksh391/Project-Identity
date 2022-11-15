@@ -9,6 +9,7 @@ body {
     width: 98%;
     left: 50%; top: auto;
     transform: translate(-50%,0);
+    margin-top: 20px;
 }
 
 .Introduction h1 {
