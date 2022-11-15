@@ -12,3 +12,8 @@
     font-family: "Abril FatFace";
     src: url("../font/Abril Fatface/AbrilFatface-Regular.ttf") format("truetype");
 }
+
+body {
+    background-color: #152033;
+    color: antiquewhite;
+}
