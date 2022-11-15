@@ -3,7 +3,7 @@
     color: antiquewhite;
     background-color: #0e141f;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     height: 6.5rem;
     /*margin-top: -7.5px; fix*/
@@ -32,4 +32,9 @@ ul {
 li {
     display: inline-block;
     padding: 10px;
+}
+
+.navbar img {
+    height: 3.6rem;
+    margin: 5px 5px 5px 1.55% ;
 }
