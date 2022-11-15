@@ -1,0 +1,35 @@
+.navbar {
+    z-index: 998;
+    color: antiquewhite;
+    background-color: #0e141f;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 6.5rem;
+    /*margin-top: -7.5px; fix*/
+    /*width: 100%;*/
+    margin: 15px;
+    border-radius: 25px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+ul, li, a {
+    text-decoration: none;
+    color: antiquewhite;
+    list-style: none;
+    text-align: right;
+}
+
+a{
+    font-size: 1.5rem;
+}
+
+ul {
+    margin: 5px 1.5% 5px 5px;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
