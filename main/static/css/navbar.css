@@ -21,7 +21,7 @@ ul, li, a {
     text-align: right;
 }
 
-a{
+ul a{
     font-size: 1.5rem;
 }
 
@@ -34,7 +34,7 @@ li {
     padding: 10px;
 }
 
-.navbar img {
-    height: 5rem;
-    margin: 5px 5px 5px 1.55% ;
+.header_links img {
+    height: 5.5rem;
+    margin-left: 17.5%;
 }
