@@ -1,3 +1,47 @@
 body {
     font-family: "San Fransisco", sans-serif;
 }
+
+.page {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 98%;
+    left: 50%; top: auto;
+    transform: translate(-50%,0);
+    margin-top: 20px;
+}
+
+.Introduction {
+    width: 95%;
+    height: auto;
+    align-items: center;
+}
+
+.Introduction h1 {
+    font-family: "Abril FatFace", sans-serif;
+    font-weight: 200;
+    width: 90%;
+    font-size: 500%;
+    text-align: center;
+    z-index: -1;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    height: auto;
+    /*border-right: 0.07em solid black;*/
+    /*animation: typing 10s linear infinite forwards;*/
+}
+
+.Introduction h2 {
+    font-size: 170%;
+    text-align: center;
+    margin-top: -7.5px;
+    height: auto;
+}
+
+.Introduction img {
+    height: 1000px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}

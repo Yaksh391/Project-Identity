@@ -8,5 +8,11 @@
 
 
 {% block content %}
-    Hello
+    <div class="page">
+        <div class="Introduction">
+            <h1>I am {{ person.first_name }} {{ person.middle_name }} {{ person.last_name }}!</h1>
+            <h2>Quite a passionate Developer, Designer, Engineer and much more! From Surat, India.</h2>
+            <img src="{{ person.picture.url }}" alt="image of me with background removed">
+        </div>
+    </div>
 {% endblock content %}
