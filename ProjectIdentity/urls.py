@@ -24,4 +24,5 @@ urlpatterns = [
     path('', mainViews.Home),
     path('projects/', mainViews.Project_Showcase),
     path('projects/<str:title>/', mainViews.Project_Preview),
+    path('about/', mainViews.About)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
