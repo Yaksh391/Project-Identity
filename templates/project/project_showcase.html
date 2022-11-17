@@ -7,9 +7,13 @@
 {% endblock head %}
 
 {% block content %}
-    {% for project in projects %}
-        <h1>{{ project.title }}</h1>
-        <img src="{{ project.cover_image.url }}" alt="{{ project.title }}'s cover image">
-        <p>{{ project.description }}</p>
-    {% endfor %}
+    <div class="projects">
+        {% for project in projects %}
+            <div class="project_card">
+                <h1>{{ project.title }}</h1>
+                <img src="{{ project.cover_image.url }}" alt="{{ project.title }}'s cover image">
+                <p>{{ project.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock content %}
