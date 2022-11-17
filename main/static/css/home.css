@@ -21,7 +21,7 @@ body {
     z-index: -1;
     margin: 0 auto;
     /*overflow: hidden;*/
-    height: 110px;
+    height: auto;
     /*border-right: 0.07em solid black;*/
     /*animation: typing 10s linear infinite forwards;*/
 }
@@ -37,7 +37,7 @@ body {
 
 .Introduction img {
     z-index: 1;
-    /*margin-top: -195px; reduces the image not the text */
+    margin-top: -195px;
     /*width: 55%;*/
     max-width: 100%;
     height: auto;
