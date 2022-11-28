@@ -13,6 +13,7 @@
                 <h1>{{ project.title }}</h1>
                 <img src="{{ project.cover_image.url }}" alt="{{ project.title }}'s cover image">
                 <p>{{ project.description }}</p>
+                <button class="more-button"><a href="/projects/{{ project.title }}/">More</a></button>
             </div>
         {% endfor %}
     </div>
