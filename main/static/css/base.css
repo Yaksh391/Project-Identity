@@ -15,5 +15,9 @@
 
 body {
     background-color: #152033;
+    /*background-image: url("../img/cartographer.png");*/
+    /*!*background-repeat: no-repeat;*!*/
+    /*background-attachment: fixed;*/
+    /*!*background-size: cover;*!*/
     color: antiquewhite;
 }
