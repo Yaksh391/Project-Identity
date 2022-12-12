@@ -15,6 +15,7 @@
     border-radius: 25px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(2px);
+    top: 15px;
 }
 
 ul, li, a {
