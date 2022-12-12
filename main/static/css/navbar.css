@@ -38,16 +38,33 @@ li {
     padding: 10px;
 }
 
+.nav_links {
+    padding-left: 0;
+}
+
+.home_socials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .header_links img {
     height: 5.5rem;
-    margin-left: 17.5%;
+}
+
+.header_links {
+    transform: translate(17.5%, 0);
+    /*margin-right: 17.5%;*/
 }
 
 .social_links {
-    transform: translate(48%, 0);
+    transform: translate(30px, 0);
+}
+
+.social_links a {
+    padding: 10px;
 }
 
 .social_links img {
     height: 3rem;
-    padding: 10px;
+    transform: translate(0, 45%);
 }
