@@ -41,3 +41,12 @@ li {
     height: 5.5rem;
     margin-left: 17.5%;
 }
+
+.social_links {
+    transform: translate(48%, 0);
+}
+
+.social_links img {
+    height: 3rem;
+    padding: 10px;
+}
