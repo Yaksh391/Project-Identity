@@ -66,5 +66,5 @@ li {
 
 .social_links img {
     height: 3rem;
-    transform: translate(0, 45%);
+    transform: translate(3px, 45%);
 }
