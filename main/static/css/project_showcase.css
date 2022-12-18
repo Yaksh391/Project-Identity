@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    left: 50%; top: 125px;
+    left: 50%; top: 135px;
     transform: translate(-50%, 0);
     width: 100%;
     justify-content: space-evenly;
@@ -14,11 +14,14 @@
     height: auto;
     width: 500px;
     margin: 15px;
-    border-radius: 10px;
     backdrop-filter: blur(2px);
-    background-color: #0d131f; /*7f96cc*/
-    box-shadow: black 0 0 5px;
+    /*background-color: #0d131f; !*7f96cc*!*/
+    /*box-shadow: black 0 0 5px;*/
     /*flex: 0 1 24%;*/
+    border-radius: 45px;
+    background: #3d40a6;
+    /*box-shadow: inset 20px 20px 60px #1a213a,*/
+    /*        inset -20px -20px 60px #1b202f;*/
 }
 
 .project_card h1 {
@@ -30,7 +33,7 @@
 
 .project_card p {
     margin: 15px auto 15px auto;
-    width: 400px;
+    width: 75%;
 }
 
 .project_card img {
@@ -39,9 +42,10 @@
 }
 
 .more-button {
-    border: none; border-radius: 15px;
-    height: 50px; width: 80px;
-    background-color: #4d6594;
-    box-shadow: #6c81ab 0 0 5px;
+    border: none; border-radius: 25px;
+    height: 50px; width: 85%;
+    background-color: #1b2033;
+    /*box-shadow: #6c81ab 0 0 5px;*/
     margin: 5px 25px 25px 25px;
+    color: antiquewhite;
 }
