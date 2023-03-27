@@ -37,7 +37,7 @@ body {
 
 .Introduction img {
     z-index: 1;
-    margin-top: -195px;
+    margin-top: -12rem;
     /*width: 55%;*/
     max-width: 100%;
     height: auto;
@@ -51,4 +51,8 @@ body {
     width: 95%;
     height: auto;
     align-items: center;
+}
+
+.Introduction p {
+    text-align: justify;
 }
