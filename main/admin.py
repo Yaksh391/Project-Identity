@@ -12,3 +12,8 @@ class PersonAdmin(admin.ModelAdmin):
 @admin.register(models.Project)
 class PersonAdmin(admin.ModelAdmin):
     pass
+
+
+@admin.register(models.HomePage)
+class PersonAdmin(admin.ModelAdmin):
+    pass

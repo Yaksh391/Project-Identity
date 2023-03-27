@@ -3,6 +3,10 @@ from django.db import models
 # Create your models here.
 
 
+class HomePage(models.Model):
+    introduction_description = models.TextField(default="", help_text="Provide an introduction on the home page!")
+
+
 class Person(models.Model):
     first_name = models.CharField(max_length=30, default="")
     middle_name = models.CharField(max_length=30, default="")
