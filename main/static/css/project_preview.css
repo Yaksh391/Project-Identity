@@ -20,6 +20,7 @@
 .project p {
     width: 75%;
     margin: 16px auto 16px auto;
+    font-family: "San Fransisco", sans-serif;
 }
 
 .project h1{
@@ -30,12 +31,19 @@
 }
 
 .project img {
-    height: 500px;
+    width: 97%;
     border-radius: 25px;
 }
 
 .project iframe {
     border-radius: 15px;
+    width: 90%;
+    height: 450px;
+}
+
+.project h2 {
+    font-family: "Abril FatFace", sans-serif;
+    font-weight: 100;
 }
 
 .gallery {
@@ -54,8 +62,12 @@
     margin: auto auto 25px auto;
 }
 
+.gallery a {
+    text-align: center;
+}
+
 .gallery img {
-    height: 300px;
+    width: 85%;
     margin: 5px;
     border-radius: 10px;
 }
