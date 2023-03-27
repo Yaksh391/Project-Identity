@@ -1,13 +1,15 @@
 from django.shortcuts import render
 from .models import Person
 from .models import Project
+from .models import HomePage
 # Create your views here.
 
 
 def Home(request, *args, **kwargs):
     obj = Person.objects.filter(first_name__exact="Yaksh")
+    homeinfo = HomePage.objects.first()
     # model = Person.objects.all()
-    context = {"person": obj[0]}
+    context = {"person": obj[0], "homepageinfo": homeinfo}
     return render(request, 'home.html', context)
 
 
