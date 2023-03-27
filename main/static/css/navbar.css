@@ -40,7 +40,13 @@ li {
 }
 
 .nav_links {
-    padding-left: 0;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    margin: 5px 1.5% 5px 5px;
+    border: none;
+    background: none;
+    padding: 16px;
 }
 
 .home_socials {
