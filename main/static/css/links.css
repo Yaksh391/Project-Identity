@@ -1,0 +1,41 @@
+.page {
+    display: flex;
+    position: absolute;
+    width: 98%;
+    left: 50%; top: 100px;
+    transform: translate(-50%,0);
+    margin-top: 20px;
+    font-family: "San Fransisco", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.site_links_page {
+    width: 48%;
+    margin: 10px;
+    justify-content: center;
+}
+
+.site_links {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site_links a {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.social_links_page {
+    width: 45%;
+    margin: 10px;
+}
+
+.social_links_page h1 {
+    font-size: 2rem;
+}

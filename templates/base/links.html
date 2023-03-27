@@ -1,5 +1,26 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block head %}
+    <link rel="stylesheet" href="{% static 'css/links.css' %}">
     <title>Yaksh's Links</title>
 {% endblock head %}
+
+{% block content %}
+    <div class="page">
+
+        <div class="site_links_page">
+        <h1>Links for this site</h1>
+            <div class="site_links">
+                <a href="/projects">🦾 Projects</a>
+                <a href="/">💯 Academics</a>
+                <a href="/">📃 R&D</a>
+                <a href="/about">🧑 About</a>
+            </div>
+        </div>
+
+        <div class="social_links_page">
+            <h1>Social Media Handles</h1>
+        </div>
+    </div>
+{% endblock content %}
