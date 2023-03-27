@@ -13,9 +13,13 @@
 }
 
 .site_links_page {
-    width: 48%;
+    width: 47%;
     margin: 10px;
     justify-content: center;
+}
+
+.site_links_page h1 {
+    font-size: 2rem;
 }
 
 .site_links {
@@ -32,10 +36,29 @@
 }
 
 .social_links_page {
-    width: 45%;
-    margin: 10px;
+    width: 47%;
+    margin: 10px 10px 150px 10px;
+    justify-content: space-evenly;
 }
 
 .social_links_page h1 {
     font-size: 2rem;
+}
+
+.social_links_site {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.social_links_site a {
+    margin: 10px;
+    text-align: center;
+    justify-items: center;
+    width: 75%;
+}
+
+.social_links_site img {
+    height: 7.5rem;
 }
