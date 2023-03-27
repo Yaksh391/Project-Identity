@@ -28,3 +28,8 @@ def Project_Preview(request, title, *args, **kwargs):
     obj = Project.objects.get(title=title.title())
     context = {"project": obj}
     return render(request, 'project/project_preview.html', context)
+
+
+def Links(request, *args, **kwargs):
+    context = {}
+    return render(request, 'base/links.html', context)
