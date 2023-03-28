@@ -104,14 +104,19 @@ li {
     background-color: rgba(14,20,31,0.85);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 300px;
+    justify-content: center;
+    width: 98%;
     z-index: 998;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(2px);
 }
 
 .dock a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 10px;
+    justify-items: center;
+}
+
+.dock img {
+    height: 1.5rem;
 }
