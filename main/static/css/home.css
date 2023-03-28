@@ -56,3 +56,7 @@ body {
 .Introduction p {
     text-align: justify;
 }
+
+.bottom_space {
+    height: 100px;
+}
