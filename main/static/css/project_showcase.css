@@ -39,6 +39,7 @@
 .project_card img {
     height: 150px;
     border-radius: 10px;
+    box-shadow: 0 0 60px #1a213a;
 }
 
 .more-button {
