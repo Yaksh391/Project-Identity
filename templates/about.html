@@ -10,9 +10,119 @@
 {% block content %}
     <div class="page">
         <div class="Introduction">
-            <h1>I am {{ person.first_name }} {{ person.middle_name }} {{ person.last_name }}!</h1>
-            <h2>Quite a passionate Developer, Designer, Engineer and much more! From Surat, India.</h2>
-            <img src="{{ person.picture.url }}" alt="image of me with background removed">
+            <h1>Hi, I am {{ person.first_name }} {{ person.middle_name }} {{ person.last_name }}!</h1>
+            <h2>Passionate Developer, Designer, Engineer and much more from Surat, India.</h2>
+            <img class="profile-image" src="{{ person.picture.url }}" alt="image of me with background removed">
+            <h1>My Journey</h1>
+            <div class="timeline">
+{#                <div class="birth">#}
+                    <div class="timeline__component">
+                        <div class="timeline__date -right">
+                            2006
+                        </div>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component-bg">
+                        <h3 class="timeline__title -left">Welcome!</h3>
+                        <p class="timeline__para">
+                            I am born in Surat on 20th March 2006!
+                        </p>
+                    </div>
+{#                </div>#}
+{#                <div class="robotics-begin">#}
+                    <div class="timeline__component">
+                        <div class="timeline__date -right">
+                            2014-15
+                        </div>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component-bg">
+                        <h3 class="timeline__title -left">New Era Begins</h3>
+                        <p class="timeline__para">
+                            I join a local robotics academy for training with lego NXTs & EV3s. I then take part in IRO 2015.
+                        </p>
+                    </div>
+{#                </div>#}
+{#                wro 2016#}
+                    <div class="timeline__component">
+                        <div class="timeline__date -right">
+                            2016
+                        </div>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component-bg">
+                        <h3 class="timeline__title -left">Getting Further in Robotics</h3>
+                        <p class="timeline__para">
+                            I take part in World Robotics Olympiad 2016 & qualify for India nationals & travel to Kolkata.
+                        </p>
+                    </div>
+{#                FLL 2017#}
+                    <div class="timeline__component">
+                        <div class="timeline__date -right">
+                            2017
+                        </div>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component-bg">
+                        <h3 class="timeline__title -left">Trying something new</h3>
+                        <p class="timeline__para">
+                            I learn about FLL (FIRST Lego League). I join team Amrutam from Surat & travel to Chennai for the India national qualifiers.
+                        </p>
+                    </div>
+{#                FLL 2019#}
+                    <div class="timeline__component">
+                        <div class="timeline__date -right">
+                            2019
+                        </div>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component-bg">
+                        <h3 class="timeline__title -left">Restarting</h3>
+                        <p class="timeline__para">
+                            I take a small break from robotics & participate in FLL with team GreenVitality. We travel to Mumbai. At the national qualifiers, we rank in the top 10. We were about to represent India at Asia Pacific FLL in Singapore but then COVID strikes.
+                        </p>
+                    </div>
+{#                FTC 2021#}
+                    <div class="timeline__component">
+                        <div class="timeline__date -right">
+                            2021
+                        </div>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component-bg">
+                        <h3 class="timeline__title -left">New Challenges</h3>
+                        <p class="timeline__para">
+                            Looking to form a team, I become one of the founding members of FTC team Lab Fusion. I took part with Lab Fusion in Freight Frenzy. We won the motivate award & also got nominated for the think award at our India qualifiers in Pune. I was also nominated as Dean's List semi-finalist from my team.
+                        </p>
+                    </div>
+{#                FTC 2022#}
+                    <div class="timeline__component">
+                        <div class="timeline__date -right">
+                            2021
+                        </div>
+                    </div>
+                    <div class="timeline__middle">
+                        <div class="timeline__point"></div>
+                    </div>
+                    <div class="timeline__component timeline__component-bg">
+                        <h3 class="timeline__title -left">Continuing Legacy</h3>
+                        <p class="timeline__para">
+                            I with Lab Fusion take part in FTC PowerPlay. This time at India qualifiers even with 10 international teams we got nominated for connect, innovate & think award. We won the Super Inspire award as well & are solely representing at FIRST World Championship. I have also won Dean's List Finalist award nationally & will be having a special lunch with Dean Kaeman himself.
+                        </p>
+                    </div>
+            </div>
         </div>
     </div>
 {% endblock content %}
