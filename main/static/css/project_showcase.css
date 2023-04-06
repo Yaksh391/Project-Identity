@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    left: 50%; top: 135px;
+    left: 50%; top: 100px;
     transform: translate(-50%, 0);
     width: 100%;
     justify-content: space-evenly;
