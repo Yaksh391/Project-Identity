@@ -7,9 +7,10 @@ body {
     justify-content: center;
     position: absolute;
     width: 98%;
-    left: 50%; top: 100px;
+    left: 50%; top: 65px;
     transform: translate(-50%,0);
     margin-top: 20px;
+    padding-bottom: 75px;
 }
 
 .Introduction {
@@ -35,14 +36,68 @@ body {
 .Introduction h2 {
     font-size: 170%;
     text-align: center;
-    margin-top: -7.5px;
+    margin-top: -5px;
     height: auto;
     font-weight: 100;
 }
 
 .Introduction img {
-    height: 1000px;
+    width: 55%;
+    border-radius: 25px;
     position: relative;
     left: 50%;
     transform: translate(-50%,0);
+}
+
+.timeline {
+    margin: 0 auto;
+    max-width: 92%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 4px 3fr;
+}
+
+.timeline__component {
+    margin: 0 20px 20px 20px;
+}
+
+.timeline__component-bg {
+    padding: 1.5em;
+    background: #3d40a6;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    border-radius: 25px;
+}
+
+.timeline__title {
+    font-family: "Abril FatFace", sans-serif;
+    font-size: 150%;
+    font-weight: 200;
+    margin: 0 0 10px 0;
+}
+
+.timeline__para {
+ margin: 0;
+}
+
+.-right {
+    text-align: right;
+}
+
+.-left {
+    text-align: left;
+}
+
+.timeline__middle {
+    position: relative;
+    background: antiquewhite;
+}
+
+.timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px; height: 20px;
+    border-radius: 20px;
+    background: antiquewhite;
 }
