@@ -1,5 +1,4 @@
 from django.db import models
-from filer.fields.image import FilerImageField
 
 # Create your models here.
 
