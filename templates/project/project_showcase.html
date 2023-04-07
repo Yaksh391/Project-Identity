@@ -7,16 +7,21 @@
 {% endblock head %}
 
 {% block content %}
-    <div class="projects">
-        {% for project in projects %}
-            <div class="project_card">
-                <h1>{{ project.title }}</h1>
-                <img src="{{ project.cover_image.url }}" alt="{{ project.title }}'s cover image">
-                <p class="description">{{ project.description }}</p>
-                <a href="/projects/{{ project.title }}/">
-                    <button type="button" class="more-button">More ↗</button>
-                </a>
-            </div>
-        {% endfor %}
+    <div class="page">
+        <div class="basic-info">
+            <h1>Here's all Projects, R&D & Work done over the years.</h1>
+        </div>
+        <div class="projects">
+            {% for project in projects %}
+                <div class="project_card">
+                    <h1>{{ project.title }}</h1>
+                    <img src="{{ project.cover_image.url }}" alt="{{ project.title }}'s cover image">
+                    <p class="description">{{ project.description }}</p>
+                    <a href="/projects/{{ project.title }}/">
+                        <button type="button" class="more-button">More ↗</button>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock content %}
