@@ -4,7 +4,7 @@ body {
 
 .timeline {
     margin: 0 auto;
-    max-width: 92%;
+    width: 92%;
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 4px 3fr;
