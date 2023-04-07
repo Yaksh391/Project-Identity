@@ -39,3 +39,8 @@ def Project_Preview(request, title, *args, **kwargs):
 def Links(request, *args, **kwargs):
     context = {}
     return render(request, 'base/links.html', context)
+
+
+def Academics(request, *args, **kwargs):
+    context = {}
+    return render(request, 'academics.html', context)
