@@ -7,5 +7,26 @@
 
 {% block content %}
     <div class="page">
+        <div class="basic-info">
+            <h1>So how's school? Well...</h1>
+        </div>
+        <div class="timeline">
+        {% for event in timeline_events %}
+            <div class="timeline__component">
+                <div class="timeline__date -right">
+                    {{ event.Event_date_op }}
+                </div>
+            </div>
+            <div class="timeline__middle">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component-bg">
+                <h3 class="timeline__title -left">{{ event.Event_title }}</h3>
+                <p class="timeline__para">
+                    {{ event.Event_description }}
+                </p>
+            </div>
+        {% endfor %}
+        </div>
     </div>
 {% endblock content %}
