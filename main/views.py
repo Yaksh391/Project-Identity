@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from .models import Person
 from .models import Project
-from .models import HomePage, AboutPageTimelineEvent
+from .models import HomePage
+from .models import AboutPageTimelineEvent, AcademicsPageTimelineEvent
 # Create your views here.
 
 
@@ -42,7 +43,7 @@ def Links(request, *args, **kwargs):
 
 
 def Academics(request, *args, **kwargs):
-    timeline_events = AboutPageTimelineEvent.objects.all().order_by('-Event_date_op')
+    timeline_events = AcademicsPageTimelineEvent.objects.all().order_by('-Event_date_op')
     context = {
         "timeline_events": timeline_events
     }
