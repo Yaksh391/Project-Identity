@@ -17,3 +17,8 @@ class PersonAdmin(admin.ModelAdmin):
 @admin.register(models.HomePage)
 class PersonAdmin(admin.ModelAdmin):
     pass
+
+
+@admin.register(models.AboutPageTimelineEvent)
+class PersonAdmin(admin.ModelAdmin):
+    pass
