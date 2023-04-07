@@ -23,6 +23,10 @@ def path_project_title(instance, filename):
     return 'projectInformation/{0}/{1}'.format(instance.title, filename)
 
 
+def path_service_title(instance, filename):
+    return 'projectInformation/{0}/{1}'.format(instance.title, filename)
+
+
 class Project(models.Model):
     title = models.CharField(max_length=50, default="",  help_text="Please use title case formatting only")
     cover_description = models.TextField(max_length=400, default="")
@@ -38,6 +42,21 @@ class Project(models.Model):
     image_7 = models.ImageField(upload_to=path_project_title, default="", null=True, blank=True)
     youtube_video = models.CharField(default="", max_length=40)
     discipline_of_work = models.TextField(default="", help_text="Please separate them by a comma.")
+
+
+class CommunityService(models.Model):
+    title = models.CharField(max_length=50, default="",  help_text="Please use title case formatting only")
+    cover_description = models.TextField(max_length=400, default="")
+    description = models.TextField(max_length=5000, default="")
+    cover_image = models.ImageField(upload_to=path_service_title, default="")
+    image_1 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
+    image_2 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
+    image_3 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
+    image_4 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
+    image_5 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
+    image_6 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
+    image_7 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
+    youtube_video = models.CharField(default="", max_length=40)
 
 
 class AboutPageTimelineEvent(models.Model):
