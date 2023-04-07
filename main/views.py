@@ -42,5 +42,8 @@ def Links(request, *args, **kwargs):
 
 
 def Academics(request, *args, **kwargs):
-    context = {}
+    timeline_events = AboutPageTimelineEvent.objects.all().order_by('-Event_date_op')
+    context = {
+        "timeline_events": timeline_events
+    }
     return render(request, 'academics.html', context)
