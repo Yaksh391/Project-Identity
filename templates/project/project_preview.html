@@ -24,13 +24,13 @@
         </div>
         <div class="gallery">
             <h2>Gallery:</h2>
-            <a href="{{ project.image_1.url }}" target="_blank"><img src="{{ project.image_1.url }}" alt="{{ project.title }}'s other image"></a>
-            <a href="{{ project.image_2.url }}" target="_blank"><img src="{{ project.image_2.url }}" alt="{{ project.title }}'s other image"></a>
-            <a href="{{ project.image_3.url }}" target="_blank"><img src="{{ project.image_3.url }}" alt="{{ project.title }}'s other image"></a>
-            <a href="{{ project.image_4.url }}" target="_blank"><img src="{{ project.image_4.url }}" alt="{{ project.title }}'s other image"></a>
-            <a href="{{ project.image_5.url }}" target="_blank"><img src="{{ project.image_5.url }}" alt="{{ project.title }}'s other image"></a>
-            <a href="{{ project.image_6.url }}" target="_blank"><img src="{{ project.image_6.url }}" alt="{{ project.title }}'s other image"></a>
-            <a href="{{ project.image_7.url }}" target="_blank"><img src="{{ project.image_7.url }}" alt="{{ project.title }}'s other image"></a>
+            {% if project.image_1 %}<a href="{{ project.image_1.url }}" target="_blank"><img src="{{ project.image_1.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_2 %}<a href="{{ project.image_2.url }}" target="_blank"><img src="{{ project.image_2.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_3 %}<a href="{{ project.image_3.url }}" target="_blank"><img src="{{ project.image_3.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_4 %}<a href="{{ project.image_4.url }}" target="_blank"><img src="{{ project.image_4.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_5 %}<a href="{{ project.image_5.url }}" target="_blank"><img src="{{ project.image_5.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_6 %}<a href="{{ project.image_6.url }}" target="_blank"><img src="{{ project.image_6.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_7 %}<a href="{{ project.image_7.url }}" target="_blank"><img src="{{ project.image_7.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
         </div>
     </div>
 
