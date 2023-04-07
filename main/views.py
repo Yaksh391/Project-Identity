@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Person
 from .models import Project
-from .models import HomePage
+from .models import HomePage, AboutPageTimelineEvent
 # Create your views here.
 
 
@@ -15,8 +15,12 @@ def Home(request, *args, **kwargs):
 
 def About(request, *args, **kwargs):
     obj = Person.objects.filter(first_name__exact="Yaksh")
+    timeline_events = AboutPageTimelineEvent.objects.all().order_by('-Event_date_op')
     # model = Person.objects.all()
-    context = {"person": obj[0]}
+    context = {
+        "person": obj[0],
+        "timeline_events": timeline_events,
+    }
     return render(request, 'about.html', context)
 
 
