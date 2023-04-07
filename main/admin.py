@@ -22,3 +22,8 @@ class PersonAdmin(admin.ModelAdmin):
 @admin.register(models.AboutPageTimelineEvent)
 class PersonAdmin(admin.ModelAdmin):
     pass
+
+
+@admin.register(models.AcademicsPageTimelineEvent)
+class PersonAdmin(admin.ModelAdmin):
+    pass
