@@ -43,3 +43,9 @@ class AboutPageTimelineEvent(models.Model):
     Event_date_op = models.CharField(max_length=50, default="", help_text="Please put in event date.")
     Event_title = models.CharField(max_length=200, default="", help_text="Please put in a exciting title for the event!")
     Event_description = models.TextField(max_length=1000, default="")
+
+
+class AcademicsPageTimelineEvent(models.Model):
+    Event_date_op = models.CharField(max_length=50, default="", help_text="Please put in event date.")
+    Event_title = models.CharField(max_length=200, default="", help_text="Please put in a exciting title for the event!")
+    Event_description = models.TextField(max_length=1000, default="")
