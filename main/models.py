@@ -25,7 +25,8 @@ def path_project_title(instance, filename):
 
 class Project(models.Model):
     title = models.CharField(max_length=50, default="",  help_text="Please use title case formatting only")
-    description = models.TextField(max_length=500, default="")
+    cover_description = models.TextField(max_length=400, default="")
+    description = models.TextField(max_length=5000, default="")
     references = models.TextField(max_length=1000, default="")
     cover_image = models.ImageField(upload_to=path_project_title, default="")
     image_1 = models.ImageField(upload_to=path_project_title, default="", null=True, blank=True)
