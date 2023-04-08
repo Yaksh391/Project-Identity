@@ -25,7 +25,7 @@ urlpatterns = [
     path('projects/', mainViews.Project_Showcase),
     path('projects/<str:title>/', mainViews.Project_Preview),
     path('services/', mainViews.Service_Showcase),
-    path('services/<str:title>/', mainViews.Service_Preview),
+    path('services/<str:service_title>/', mainViews.Service_Preview),
     path('about/', mainViews.About),
     path('links/', mainViews.Links),
     path('academics/', mainViews.Academics),

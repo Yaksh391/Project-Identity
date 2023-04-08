@@ -43,8 +43,8 @@ def Project_Preview(request, title, *args, **kwargs):
     return render(request, 'project/project_preview.html', context)
 
 
-def Service_Preview(request, title, *args, **kwargs):
-    obj = CommunityService.objects.get(title=title.title())
+def Service_Preview(request, service_title, *args, **kwargs):
+    obj = CommunityService.objects.get(title=service_title.title())
     context = {"CommunityService": obj}
     return render(request, 'service/service_preview.html', context)
 
