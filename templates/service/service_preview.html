@@ -1,0 +1,37 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block head %}
+    <title>{{ project.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/project_preview.css' %}">
+{% endblock head %}
+
+{% block content %}
+    <div class="page">
+        <div class="project">
+            <h1>{{ project.title }}</h1>
+            <img src="{{ project.cover_image.url }}" alt="{{ project.title }}'s cover image">
+            <p>{{ project.description }}</p>
+            <h2>References Used:</h2>
+            <p>{{ project.references }}</p>
+            <h2>Discipline Of Work:</h2>
+            <p>{{ project.discipline_of_work }}</p>
+            <h2>Youtube:</h2>
+            <iframe src="https://www.youtube-nocookie.com/embed/{{ project.youtube_video }}"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <div class="gallery">
+            <h2>Gallery:</h2>
+            {% if project.image_1 %}<a href="{{ project.image_1.url }}" target="_blank"><img src="{{ project.image_1.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_2 %}<a href="{{ project.image_2.url }}" target="_blank"><img src="{{ project.image_2.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_3 %}<a href="{{ project.image_3.url }}" target="_blank"><img src="{{ project.image_3.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_4 %}<a href="{{ project.image_4.url }}" target="_blank"><img src="{{ project.image_4.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_5 %}<a href="{{ project.image_5.url }}" target="_blank"><img src="{{ project.image_5.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_6 %}<a href="{{ project.image_6.url }}" target="_blank"><img src="{{ project.image_6.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if project.image_7 %}<a href="{{ project.image_7.url }}" target="_blank"><img src="{{ project.image_7.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+        </div>
+    </div>
+
+{% endblock content %}
