@@ -24,7 +24,7 @@ def path_project_title(instance, filename):
 
 
 def path_service_title(instance, filename):
-    return 'projectInformation/{0}/{1}'.format(instance.title, filename)
+    return 'serviceInformation/{0}/{1}'.format(instance.title, filename)
 
 
 class Project(models.Model):
