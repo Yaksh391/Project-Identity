@@ -3,21 +3,21 @@
 
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/service_showcase.css' %}">
-    <title>Yaksh's Projects</title>
+    <title>Yaksh's Community Service Efforts</title>
 {% endblock head %}
 
 {% block content %}
     <div class="page">
         <div class="basic-info">
-            <h1>Here's all Projects, R&D & Work done over the years.</h1>
+            <h1>Here's all community services I have done over the years.</h1>
         </div>
         <div class="projects">
-            {% for project in projects %}
+            {% for service in CommunityServices %}
                 <div class="project_card">
-                    <h1>{{ project.title }}</h1>
-                    <img src="{{ project.cover_image.url }}" alt="{{ project.title }}'s cover image">
-                    <p class="description">{{ project.cover_description }}</p>
-                    <a href="/projects/{{ project.title }}/">
+                    <h1>{{ service.title }}</h1>
+                    <img src="{{ service.cover_image.url }}" alt="{{ service.title }}'s cover image">
+                    <p class="description">{{ service.cover_description }}</p>
+                    <a href="/services/{{ service.title }}/">
                         <button type="button" class="more-button">More ↗</button>
                     </a>
                 </div>
