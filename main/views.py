@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Person
-from .models import Project
+from .models import Project, CommunityService
 from .models import HomePage
 from .models import AboutPageTimelineEvent, AcademicsPageTimelineEvent
 # Create your views here.
@@ -31,10 +31,22 @@ def Project_Showcase(request, *args, **kwargs):
     return render(request, 'project/project_showcase.html', context)
 
 
+def Service_Showcase(request, *args, **kwargs):
+    objs = CommunityService.objects.all()
+    context = {"CommunityServices": objs}
+    return render(request, 'service/service_showcase.html', context)
+
+
 def Project_Preview(request, title, *args, **kwargs):
     obj = Project.objects.get(title=title.title())
     context = {"project": obj}
     return render(request, 'project/project_preview.html', context)
+
+
+def Service_Preview(request, title, *args, **kwargs):
+    obj = CommunityService.objects.get(title=title.title())
+    context = {"CommunityService": obj}
+    return render(request, 'service/service_preview.html', context)
 
 
 def Links(request, *args, **kwargs):
