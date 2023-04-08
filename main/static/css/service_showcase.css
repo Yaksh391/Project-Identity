@@ -1,0 +1,77 @@
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.project_card {
+    justify-items: center;
+    text-align: center;
+    height: auto;
+    width: 500px;
+    margin: 15px;
+    backdrop-filter: blur(2px);
+    /*background-color: #0d131f; !*7f96cc*!*/
+    /*box-shadow: black 0 0 5px;*/
+    /*flex: 0 1 24%;*/
+    border-radius: 45px;
+    background: #3d40a6;
+    /*box-shadow: inset 20px 20px 60px #1a213a,*/
+    /*        inset -20px -20px 60px #1b202f;*/
+}
+
+.project_card h1 {
+    font-size: 50px;
+    font-family: "Abril FatFace", sans-serif;
+    font-weight: 200;
+    margin: 15px;
+}
+
+.project_card p {
+    margin: 15px auto 15px auto;
+    width: 75%;
+}
+
+.project_card img {
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 60px #1a213a;
+}
+
+.more-button {
+    border: none; border-radius: 25px;
+    height: 50px; width: 85%;
+    background-color: #1b2033;
+    /*box-shadow: #6c81ab 0 0 5px;*/
+    margin: 5px 25px 25px 25px;
+    color: antiquewhite;
+}
+
+.description {
+    font-family: "San Fransisco", sans-serif;
+}
+
+.page {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 50%; transform: translateX(-50%);
+    width: 95%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 75px;
+}
+
+.basic-info {
+    width: 95%;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.basic-info h1 {
+    margin: 0 20px 20px 20px;
+}
