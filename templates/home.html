@@ -10,7 +10,9 @@
         <div class="Introduction">
             <h1>Hello, I am {{ person.first_name }} {{ person.last_name }}!</h1>
             <img src="{{ person.picture_background_removed.url }}" alt="image of me with background removed">
-            <p class="-center">{{ homepageinfo.introduction_description }}</p>
+            <p>{{ homepageinfo.introduction_description }}</p>
+            <p>Everyone has something to in their free time. Well I do {{ person.hobbies.lower }}.</p>
+            <p>I gotta say, I am the most interested in things like {{ person.interests.lower }}.</p>
             <div class="bottom_space"></div>
         </div>
     </div>
