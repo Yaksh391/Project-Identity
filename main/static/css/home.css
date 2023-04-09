@@ -51,8 +51,16 @@ body {
     width: 95%;
     height: auto;
     align-items: center;
+    justify-items: center;
 }
 
 .bottom_space {
     height: 100px;
+}
+
+.Introduction p {
+    width: 85%;
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+    text-align: center;
 }
