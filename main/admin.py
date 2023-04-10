@@ -34,3 +34,8 @@ class PersonAdmin(admin.ModelAdmin):
 @admin.register(models.CommunityService)
 class PersonAdmin(admin.ModelAdmin):
     list_display = ["title"]
+
+
+@admin.register(models.AcademicAchievement)
+class PersonAdmin(admin.ModelAdmin):
+    list_display = ["title"]

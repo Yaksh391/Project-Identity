@@ -27,6 +27,10 @@ def path_service_title(instance, filename):
     return 'serviceInformation/{0}/{1}'.format(instance.title, filename)
 
 
+def path_academics_title(instance, filename):
+    return 'academicInformation/{0}/{1}'.format(instance.title, filename)
+
+
 class Project(models.Model):
     title = models.CharField(max_length=50, default="",  help_text="Please use title case formatting only")
     cover_description = models.TextField(max_length=400, default="")
@@ -56,6 +60,17 @@ class CommunityService(models.Model):
     image_5 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
     image_6 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
     image_7 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
+    youtube_video = models.CharField(default="", max_length=40)
+
+
+class AcademicAchievement(models.Model):
+    title = models.CharField(max_length=50, default="",  help_text="Please use title case formatting only")
+    cover_description = models.TextField(max_length=400, default="")
+    description = models.TextField(max_length=5000, default="")
+    cover_image = models.ImageField(upload_to=path_academics_title, default="")
+    image_1 = models.ImageField(upload_to=path_academics_title, default="", null=True, blank=True)
+    image_2 = models.ImageField(upload_to=path_academics_title, default="", null=True, blank=True)
+    image_3 = models.ImageField(upload_to=path_academics_title, default="", null=True, blank=True)
     youtube_video = models.CharField(default="", max_length=40)
 
 
