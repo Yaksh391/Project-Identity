@@ -59,4 +59,4 @@ def Academics(request, *args, **kwargs):
     context = {
         "timeline_events": timeline_events
     }
-    return render(request, 'academics.html', context)
+    return render(request, 'academics/academics.html', context)
