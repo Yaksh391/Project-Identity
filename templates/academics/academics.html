@@ -8,8 +8,27 @@
 {% block content %}
     <div class="page">
         <div class="basic-info">
-            <h1>So how's school? Well...</h1>
+            <h1>My Academic Achievements</h1>
         </div>
+
+        <div class="projects">
+            {% for achievement in academic_achievements %}
+                <div class="project_card">
+                    <h1>{{ achievement.title }}</h1>
+                    <img src="{{ achievement.cover_image.url }}" alt="{{ achievement.title }}'s cover image">
+                    <p class="description">{{ achievement.cover_description }}</p>
+                    <a href="/projects/{{ achievement.title }}/">
+                        <button type="button" class="more-button">More ↗</button>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="basic-info">
+            <h1>My Journey</h1>
+        </div>
+
+
         <div class="timeline">
         {% for event in timeline_events %}
             <div class="timeline__component">
