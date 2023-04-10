@@ -2,27 +2,27 @@
 {% load static %}
 
 {% block head %}
-    <title>{{ project.title }}</title>
+    <title>{{ Achievement.title }}</title>
     <link rel="stylesheet" href="{% static 'css/academics_preview.css' %}">
 {% endblock head %}
 
 {% block content %}
     <div class="page">
         <div class="project">
-            <h1>{{ project.title }}</h1>
-            <img src="{{ project.cover_image.url }}" alt="{{ project.title }}'s cover image">
-            <p>{{ project.description }}</p>
+            <h1>{{ Achievement.title }}</h1>
+            <img src="{{ Achievement.cover_image.url }}" alt="{{ Achievement.title }}'s cover image">
+            <p>{{ Achievement.description }}</p>
             <h2>Youtube:</h2>
-            <iframe src="https://www.youtube-nocookie.com/embed/{{ project.youtube_video }}"
+            <iframe src="https://www.youtube-nocookie.com/embed/{{ Achievement.youtube_video }}"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
         </div>
         <div class="gallery">
             <h2>Gallery:</h2>
-            {% if project.image_1 %}<a href="{{ project.image_1.url }}" target="_blank"><img src="{{ project.image_1.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
-            {% if project.image_2 %}<a href="{{ project.image_2.url }}" target="_blank"><img src="{{ project.image_2.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
-            {% if project.image_3 %}<a href="{{ project.image_3.url }}" target="_blank"><img src="{{ project.image_3.url }}" alt="{{ project.title }}'s other image"></a>{% endif %}
+            {% if Achievement.image_1 %}<a href="{{ Achievement.image_1.url }}" target="_blank"><img src="{{ Achievement.image_1.url }}" alt="{{ Achievement.title }}'s other image"></a>{% endif %}
+            {% if Achievement.image_2 %}<a href="{{ Achievement.image_2.url }}" target="_blank"><img src="{{ Achievement.image_2.url }}" alt="{{ Achievement.title }}'s other image"></a>{% endif %}
+            {% if Achievement.image_3 %}<a href="{{ Achievement.image_3.url }}" target="_blank"><img src="{{ Achievement.image_3.url }}" alt="{{ Achievement.title }}'s other image"></a>{% endif %}
         </div>
     </div>
 
