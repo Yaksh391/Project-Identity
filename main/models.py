@@ -44,7 +44,7 @@ class Project(models.Model):
     image_5 = models.ImageField(upload_to=path_project_title, default="", null=True, blank=True)
     image_6 = models.ImageField(upload_to=path_project_title, default="", null=True, blank=True)
     image_7 = models.ImageField(upload_to=path_project_title, default="", null=True, blank=True)
-    pdf_file = models.FileField(upload_to=path_project_title, default="", null=True, blank=True)
+    PDF_file = models.FileField(upload_to=path_project_title, default="", null=True, blank=True)
     youtube_video = models.CharField(default="", max_length=40)
     discipline_of_work = models.TextField(default="", help_text="Please separate them by a comma.")
 
