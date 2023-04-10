@@ -49,6 +49,12 @@ def Service_Preview(request, service_title, *args, **kwargs):
     return render(request, 'service/service_preview.html', context)
 
 
+def Academic_Preview(request, academic_title, *args, **kwargs):
+    obj = CommunityService.objects.get(title=academic_title.title())
+    context = {"Achievement": obj}
+    return render(request, 'service/service_preview.html', context)
+
+
 def Links(request, *args, **kwargs):
     context = {}
     return render(request, 'base/links.html', context)
