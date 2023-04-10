@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Person
-from .models import Project, CommunityService
+from .models import Project, CommunityService, AcademicAchievement
 from .models import HomePage
 from .models import AboutPageTimelineEvent, AcademicsPageTimelineEvent
 # Create your views here.
@@ -56,7 +56,9 @@ def Links(request, *args, **kwargs):
 
 def Academics(request, *args, **kwargs):
     timeline_events = AcademicsPageTimelineEvent.objects.all().order_by('-Event_date_op')
+    academic_achievements = AcademicAchievement.objects.all()
     context = {
-        "timeline_events": timeline_events
+        "timeline_events": timeline_events,
+        "academic_achievements": academic_achievements,
     }
     return render(request, 'academics/academics.html', context)
