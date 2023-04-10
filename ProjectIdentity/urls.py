@@ -29,4 +29,5 @@ urlpatterns = [
     path('about/', mainViews.About),
     path('links/', mainViews.Links),
     path('academics/', mainViews.Academics),
+    path('academics/<str:academic_title>/', mainViews.Academic_Preview),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
