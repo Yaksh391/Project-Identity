@@ -31,6 +31,10 @@ def path_academics_title(instance, filename):
     return 'academicInformation/{0}/{1}'.format(instance.title, filename)
 
 
+def path_travel_title(instance, filename):
+    return f'travelInformation/{filename}'
+
+
 class Project(models.Model):
     title = models.CharField(max_length=50, default="",  help_text="Please use title case formatting only")
     cover_description = models.TextField(max_length=400, default="")
@@ -85,3 +89,8 @@ class AcademicsPageTimelineEvent(models.Model):
     Event_date_op = models.CharField(max_length=50, default="", help_text="Please put in event date.")
     Event_title = models.CharField(max_length=200, default="", help_text="Please put in a exciting title for the event!")
     Event_description = models.TextField(max_length=1000, default="")
+
+
+class TravelMap(models.Model):
+    World_Image = models.ImageField(upload_to=path_travel_title, default="", null=True, blank=True)
+    India_Image = models.ImageField(upload_to=path_travel_title, default="", null=True, blank=True)
