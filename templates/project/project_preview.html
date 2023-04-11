@@ -16,11 +16,15 @@
             <p>{{ project.references }}</p>
             <h2>Discipline Of Work:</h2>
             <p>{{ project.discipline_of_work }}</p>
+
+            {% if project.youtube_video %}
             <h2>Youtube:</h2>
             <iframe src="https://www.youtube-nocookie.com/embed/{{ project.youtube_video }}"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
+            {% endif %}
+
             {% if project.PDF_file %}
             <h2>Download PDF for this project:</h2>
             <a href="{{ project.PDF_file.url }}" download="{{ project.title }} - Yaksh Patel.pdf">Download PDF of {{ project.title }} - Click Here.</a>
