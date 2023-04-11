@@ -61,7 +61,7 @@ class CommunityService(models.Model):
     image_5 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
     image_6 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
     image_7 = models.ImageField(upload_to=path_service_title, default="", null=True, blank=True)
-    youtube_video = models.CharField(default="", max_length=40)
+    youtube_video = models.CharField(default="", max_length=40, null=True, blank=True)
 
 
 class AcademicAchievement(models.Model):
@@ -72,7 +72,7 @@ class AcademicAchievement(models.Model):
     image_1 = models.ImageField(upload_to=path_academics_title, default="", null=True, blank=True)
     image_2 = models.ImageField(upload_to=path_academics_title, default="", null=True, blank=True)
     image_3 = models.ImageField(upload_to=path_academics_title, default="", null=True, blank=True)
-    youtube_video = models.CharField(default="", max_length=40)
+    youtube_video = models.CharField(default="", max_length=40, null=True, blank=True)
 
 
 class AboutPageTimelineEvent(models.Model):
