@@ -68,11 +68,11 @@ body {
 
 .basic-info {
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .basic-info h1 {
     /*font-family: "Abril FatFace", sans-serif;*/
-    font-size: 3.4rem;
 }
 
 .projects {
