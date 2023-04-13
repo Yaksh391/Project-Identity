@@ -8,3 +8,12 @@
     transform: translate(-50%,0);
     margin-top: 20px;
 }
+
+.Travel-Images {
+    width: 95%;
+    text-align: center;
+}
+
+.Travel-Images img {
+    width: 90%;
+}

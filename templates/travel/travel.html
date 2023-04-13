@@ -1,7 +1,7 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block head %}
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/travel.css' %}">
     <title>Yaksh's Travels</title>
 {% endblock head %}
 
@@ -9,7 +9,10 @@
 {#    <h1>Hello world!</h1>#}
     <div class="page">
         <div class="Travel-Images">
-
+            <h1>Places where I have been Globally</h1>
+            <img src="{{ Maps.World_Image.url }}">
+            <h1>Places where I have been in India</h1>
+            <img src="{{ Maps.India_Image.url }}">
         </div>
     </div>
 {% endblock content %}
