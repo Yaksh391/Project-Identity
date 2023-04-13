@@ -9,10 +9,11 @@
 {#    <h1>Hello world!</h1>#}
     <div class="page">
         <div class="Travel-Images">
+            {% if Maps.World_Image %}
             <h1>Places where I have been Globally</h1>
-            <img src="{{ Maps.World_Image.url }}">
+            <img src="{{ Maps.World_Image.url }}">{% endif %}
             <h1>Places where I have been in India</h1>
-            <img src="{{ Maps.India_Image.url }}">
+            {% if Maps.World_Image.url %}<img src="{{ Maps.India_Image.url }}">{% endif %}
         </div>
     </div>
 {% endblock content %}
