@@ -30,4 +30,5 @@ urlpatterns = [
     path('links/', mainViews.Links),
     path('academics/', mainViews.Academics),
     path('academics/<str:academic_title>/', mainViews.Academic_Preview),
+    path('travel/', mainViews.Travel)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
