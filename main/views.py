@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .models import Person
 from .models import Project, CommunityService, AcademicAchievement
-from .models import HomePage
+from .models import HomePage, TravelMap
 from .models import AboutPageTimelineEvent, AcademicsPageTimelineEvent
 # Create your views here.
 
@@ -68,3 +68,11 @@ def Academics(request, *args, **kwargs):
         "academic_achievements": academic_achievements,
     }
     return render(request, 'academics/academics.html', context)
+
+
+def Travel(request, *args, **kwargs):
+    Maps = TravelMap.objects.first()
+    context = {
+        "Maps": Maps
+    }
+    return render(request, 'travel/travel.html', context)
