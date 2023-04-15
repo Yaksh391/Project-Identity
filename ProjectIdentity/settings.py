@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '192.168.1.98',
     '127.0.0.1',
+    '.vercel.app'
     # '192.168.1.17' # MSD office on MSD wifi
 ]
 
