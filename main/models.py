@@ -17,6 +17,8 @@ class Person(models.Model):
     hobbies = models.TextField(default="", help_text="Please separate them by a comma.")
     interests = models.TextField(default="", help_text="Please separate them by a comma.")
     skills = models.TextField(default="", help_text="Please separate them by a comma.")
+    phone = models.CharField(default="", null=True, max_length=50)
+    email = models.CharField(default="", null=True, max_length=500)
 
 
 def path_project_title(instance, filename):
