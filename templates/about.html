@@ -35,7 +35,11 @@
                 {% endfor %}
 {#                </div>#}
             </div>
-
+        <div class="contact">
+            <h1>Contact</h1>
+            <p class="-center"><a href="tel:{{ person.phone }}">Phone: {{ person.phone }}</a></p>
+            <p class="-center"><a href="mailto:{{ person.email }}">Email: {{ person.email }}</a></p>
+        </div>
         </div>
     </div>
 {% endblock content %}
